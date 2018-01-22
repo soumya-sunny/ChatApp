@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { UserComponent } from './user/user.component';
+import {ChatService} from './chat.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+  ChatService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
