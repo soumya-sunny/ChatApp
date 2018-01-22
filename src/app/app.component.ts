@@ -21,10 +21,14 @@ constructor(private chatService:ChatService){}
   getChatDeatils(){
   	 this.chatService.getChatDetails().then(      
       users =>{ this.users = users;
-        debugger;
         if (this.users.length>0){
-      this.selectedUser=this.users[0];
-     
-     }});
+     		 this.selectedUser=this.users[0];     
+    	 }
+ });
+  }
+
+  onSelect(user: User): void {
+   
+    this.selectedUser = user;
   }
 }

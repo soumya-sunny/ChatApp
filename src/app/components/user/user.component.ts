@@ -14,6 +14,7 @@ export class UserComponent implements OnChanges {
 	ngOnChanges(){
 	        let messages=this.user.messages;
 	        this.lastMessage=messages.length>0?messages[messages.length-1].text:'';
+	        debugger;
 	        this.lastMessageTime=messages.length>0?messages[messages.length-1].created:'';
 	}
 }

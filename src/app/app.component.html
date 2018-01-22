@@ -13,4 +13,8 @@
       </div>
     </div>
     <div class="col-sm-8 conversation">
+      <div class="row message" *ngFor="let message of selectedUser.messages">
+                <app-conversation [message]="message" [user]="selectedUser" class="chat"></app-conversation>
+            </div>
+            <app-reply-panel></app-reply-panel>
     </div>

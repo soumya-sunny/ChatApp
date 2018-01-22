@@ -1,0 +1,12 @@
+<div class="row message-body">
+          <div class="col-sm-12" [ngClass]="(user.id==message.createdBy)?'message-main-receiver': 'message-main-sender'">
+            <div [ngClass]="(user.id==message.createdBy)?'receiver' :'sender'">
+              <div class="message-text">
+       {{message.text}}
+              </div>
+              <span class="message-time pull-right">
+                Sun
+              </span>
+            </div>
+          </div>
+        </div>
