@@ -3,8 +3,8 @@
    
     <div class="col-sm-4 side">
      <div class="row heading">
-    <button  (click)="sort()"> <i class="fa fa-sort fa-2x" aria-hidden="true"></i></button>
- <div class="row searchBox">
+    <button  (click)="sort()" class="sort"> <i class="fa fa-sort fa-2x" aria-hidden="true"></i></button>
+ <div class="row searchBox col-sm-10">
           <div class="col-sm-12 searchBox-inner">
             <div class="form-group has-feedback">
               <input id="searchText" type="text" class="form-control" name="searchText" placeholder="Search"
@@ -23,6 +23,9 @@
       </div>
     </div>
     <div class="col-sm-8 conversation">
+       <div class="row heading">
+Messages
+       </div>
       <div class="row message" *ngFor="let message of selectedUser.messages">
                 <app-conversation [message]="message" [user]="selectedUser" class="chat"></app-conversation>
             </div>

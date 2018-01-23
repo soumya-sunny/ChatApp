@@ -97,7 +97,7 @@ body {
 
 #searchText{
   display: inline-block;
- width: 86%;
+ width: 79%;
     padding-bottom: 0px;
     padding-top: 0.8rem;
     border: 1px solid gray;
@@ -112,4 +112,7 @@ i.fa.fa-2x:hover, i.fa.fa-2x:active{
       overflow: auto;
           max-height: 600px;
     overflow-y: scroll;
+}
+.sort{
+  margin:0px 10px;
 }
