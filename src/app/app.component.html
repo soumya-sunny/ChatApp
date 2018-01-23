@@ -7,7 +7,7 @@
       <div class="side-one">
         <div class="row sideBar">
           <div *ngFor="let user of users">
-            <app-user [user]="user" (click)="onSelect(user)"></app-user>
+            <app-user [user]="user" (click)="onSelect(user)" [ngClass]="{'active': selectedUser == user}"></app-user>
           </div>
         </div>
       </div>

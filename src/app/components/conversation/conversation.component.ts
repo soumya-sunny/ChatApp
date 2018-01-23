@@ -9,7 +9,7 @@ import { Message } from '../../models/message';
 export class ConversationComponent {
 
   @Input() message:Message;
-@Input() user:any; 
+  @Input() user:any; 
 
 
 }

@@ -1,11 +1,3 @@
-.conversation {
-  padding: 0 !important;
-  margin: 0 !important;
-  height: 100%;
-  /*width: 100%;*/
-  border-left: 1px solid rgba(0, 0, 0, .08);
-  /*overflow-y: auto;*/
-}
 
 
 
@@ -59,14 +51,11 @@
 .sender {
   float: right;
   width: auto !important;
-  background: #dcf8c6;
+     background: rgb(166, 219, 243);
   border-radius: 10px 10px 0 10px;
   padding: 4px 10px 7px !important;
   font-size: 12px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
   display: inline-block;
   word-wrap: break-word;
-}
-.chat{
-  width: 100%;
 }
