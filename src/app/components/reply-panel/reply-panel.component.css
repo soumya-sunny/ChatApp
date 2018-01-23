@@ -5,3 +5,7 @@
     min-width: 94%;
         margin-left: 5px;
 }
+
+i.fa.fa-2x:active {
+    color: black ;
+}

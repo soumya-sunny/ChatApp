@@ -75,8 +75,9 @@ body {
   /*background: url("w.jpg") no-repeat fixed center;*/
   background-size: cover;
   overflow-y: auto;
-  border: 1px solid #f7f7f7;
-  height: calc(100% - 120px);
+  /*border: 1px solid #f7f7f7;*/
+  /*height: calc(100% - 120px);*/
+  height: 90px;
 }
 .chat{
   width: 100%;
@@ -90,6 +91,25 @@ body {
   border-left: 1px solid rgba(0, 0, 0, .08);
       position: relative;
     height: auto;
+        background: white;
   /*overflow-y: auto;*/
 }
 
+#searchText{
+  display: inline-block;
+ width: 86%;
+    padding-bottom: 0px;
+    padding-top: 0.8rem;
+    border: 1px solid gray;
+}
+i.fa.fa-2x:hover, i.fa.fa-2x:active{
+  color:black;
+}
+.side-one{
+      overflow: auto;
+}
+.conversation{
+      overflow: auto;
+          max-height: 600px;
+    overflow-y: scroll;
+}

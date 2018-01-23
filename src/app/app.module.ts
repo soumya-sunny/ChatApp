@@ -1,4 +1,6 @@
+import {HttpClientModule} from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 
@@ -17,7 +19,9 @@ import { ReplyPanelComponent } from './components/reply-panel/reply-panel.compon
     ReplyPanelComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
   ChatService],

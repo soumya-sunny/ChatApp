@@ -1,9 +1,19 @@
 <div class="container app">
   <div class="row app-one">
-    <div class="row heading">
-      Messages
-    </div>
+   
     <div class="col-sm-4 side">
+     <div class="row heading">
+    <button  (click)="sort()"> <i class="fa fa-sort fa-2x" aria-hidden="true"></i></button>
+ <div class="row searchBox">
+          <div class="col-sm-12 searchBox-inner">
+            <div class="form-group has-feedback">
+              <input id="searchText" type="text" class="form-control" name="searchText" placeholder="Search"
+              #inputstring (keyup.enter)="search(inputstring.value)">
+              <button><i class="fa fa-search fa-2x  pull-right" aria-hidden="true" (click)="search(inputstring.value)"></i></button>
+            </div>
+          </div>
+        </div>
+    </div>
       <div class="side-one">
         <div class="row sideBar">
           <div *ngFor="let user of users">
@@ -16,5 +26,5 @@
       <div class="row message" *ngFor="let message of selectedUser.messages">
                 <app-conversation [message]="message" [user]="selectedUser" class="chat"></app-conversation>
             </div>
-            <app-reply-panel></app-reply-panel>
+            <app-reply-panel [selectedUser]="selectedUser" (updateMessage)="countChange($event)"></app-reply-panel>
     </div>

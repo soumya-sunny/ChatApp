@@ -1,6 +1,6 @@
 <div class="row message-body">
-  <div class="col-sm-12" [ngClass]="(user.id==message.createdBy)?'message-main-receiver': 'message-main-sender'">
-    <div [ngClass]="(user.id==message.createdBy)?'receiver' :'sender'">
+  <div class="col-sm-12" [ngClass]="(message.createdBy!=0)?'message-main-receiver': 'message-main-sender'">
+    <div [ngClass]="(message.createdBy!=0)?'receiver' :'sender'">
       <div class="message-text">
         {{message.text}}
       </div>
