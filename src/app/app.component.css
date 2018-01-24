@@ -54,6 +54,7 @@ body {
   position: relative;
   display: block;
   top: 0;
+  margin-top: 10px;
 }
 
 .side-two {
@@ -114,7 +115,8 @@ i.fa.fa-2x:hover, i.fa.fa-2x:active{
     /*overflow-y: scroll;*/
 }
 .sort{
-  margin:0px 10px;
+  margin:4px 10px;
+      height: 30px;
 }/*
 .conversation{
   position: relative;
@@ -131,10 +133,18 @@ i.fa.fa-2x:hover, i.fa.fa-2x:active{
     overflow-y: auto;
 }
 .conversation .heading{
-  margin: 5px;
-    height: 27px;
-    position: absolute;
+       position: absolute;
+    border-bottom: 2px solid rgb(3, 169, 244);
+    text-align: center;
+    color: rgb(3, 169, 244);
+    display: inline;
+    height: 41px;
+    line-height: 2;
 }
+.side .row.heading{
+  height: 43px;
+}
+
 
 /*.form-horizontal{
       position: absolute;
