@@ -5,5 +5,11 @@
 button{
     margin: 0px 10px;
     background: white;
-    border: 1px solid rgb(3, 169, 244);;
+    border: 1px solid rgb(3, 169, 244);
+        border-radius: 6px;
+    line-height: 1px;
+}
+.heading{
+  margin: 5px;
+  height: 60px;
 }

@@ -26,8 +26,10 @@
        <div class="row heading">
 Messages
        </div>
+       <div class="wrapper">
       <div class="row message" *ngFor="let message of selectedUser.messages">
                 <app-conversation [message]="message" [user]="selectedUser" class="chat"></app-conversation>
+            </div>
             </div>
             <app-reply-panel [selectedUser]="selectedUser" (updateMessage)="countChange($event)"></app-reply-panel>
     </div>
