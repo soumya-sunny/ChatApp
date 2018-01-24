@@ -43,30 +43,6 @@ export const USERS: User[] = [
         "messages": [
                
             ]
-    },
-    {
-        "id":  "5",
-        "user": "Chester Dixon",
-        "img": "https://randomuser.me/api/portraits/women/66.jpg",
-        "messages": [
-               
-            ]
-    },
-    {
-        "id":  "6",
-        "user": "Chester Dixon",
-        "img": "https://randomuser.me/api/portraits/women/66.jpg",
-        "messages": [
-               
-            ]
-    },
-    {
-        "id":  "7",
-        "user": "Chester Dixon",
-        "img": "https://randomuser.me/api/portraits/women/66.jpg",
-        "messages": [
-               
-            ]
     }
     
 ];

@@ -10,12 +10,13 @@ import {User} from '../../models/user';
 })
 export class ReplyPanelComponent {
 
-  @Input() selectedUser:User;
- @Output()
-  updateMessage = new EventEmitter();
-    constructor(private chatService:ChatService){}
+	@Input() selectedUser:User;
+	@Output()
+	updateMessage = new EventEmitter();
 
-  sendMessage(replyForm){
+	constructor(private chatService:ChatService){}
+
+  	sendMessage(replyForm){
       let messagesArr=this.selectedUser.messages;
       
       let message={
@@ -25,9 +26,9 @@ export class ReplyPanelComponent {
           created:new Date().toString()
       }
 
-    this.chatService.setHeroes(message,this.selectedUser);
-   replyForm.reset();
-  this.updateMessage.emit();
+    this.chatService.setChatDetails(message,this.selectedUser);
+   	replyForm.reset();
+  	this.updateMessage.emit();
   }
 
 }

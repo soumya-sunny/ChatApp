@@ -140,6 +140,7 @@ i.fa.fa-2x:hover, i.fa.fa-2x:active{
     display: inline;
     height: 41px;
     line-height: 2;
+    font-weight: bold;
 }
 .side .row.heading{
   height: 43px;

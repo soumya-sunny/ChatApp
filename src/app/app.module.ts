@@ -9,6 +9,7 @@ import { UserComponent } from './components/user/user.component';
 import {ChatService} from './chat.service';
 import { ConversationComponent } from './components/conversation/conversation.component';
 import { ReplyPanelComponent } from './components/reply-panel/reply-panel.component';
+import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ReplyPanelComponent } from './components/reply-panel/reply-panel.compon
     AppComponent,
     UserComponent,
     ConversationComponent,
-    ReplyPanelComponent
+    ReplyPanelComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { ReplyPanelComponent } from './components/reply-panel/reply-panel.compon
     FormsModule
   ],
   providers: [
-  ChatService],
+    ChatService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

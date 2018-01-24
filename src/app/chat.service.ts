@@ -9,24 +9,25 @@ import { USERS } from './mock-users';
 @Injectable()
 export class ChatService {
 
-  constructor (
-    private http: HttpClient
-  ) {}
+	constructor (
+	    private http: HttpClient
+	) {}
 
- getChatDetails() {
- 	localStorage.setItem('chats',JSON.stringify(USERS));
-	return Promise.resolve(USERS);
-	// return this.http.get(` http://demo4842709.mockable.io/users`,{responseType: 'text'})
- //    .map((res) => res);
- }
+	getChatDetails() {
+	 	localStorage.setItem('chats',JSON.stringify(USERS));
+		return Promise.resolve(USERS);
+		/*to do- try other solutions for angular 5 issue with json */
+		// return this.http.get(` http://demo4842709.mockable.io/users`,{responseType: 'text'})
+	 //    .map((res) => res);
+	}
 
-setHeroes(message,selectedUser){
-    
-        let chats= JSON.parse(localStorage.getItem('chats'));
-     let ind=chats.indexOf(chats.filter(o=>o.id==selectedUser.id)[0]);
-    selectedUser.messages.push(message);
-    chats[ind]=selectedUser;
-   localStorage.setItem('chats',JSON.stringify(chats));
-    localStorage.setItem('original_chats', JSON.stringify(chats));
-  }
+	setChatDetails(message,selectedUser){
+	    
+	    let chats= JSON.parse(localStorage.getItem('chats'));
+	    let ind=chats.indexOf(chats.filter(o=>o.id==selectedUser.id)[0]);
+	    selectedUser.messages.push(message);
+	    chats[ind]=selectedUser;
+	  	localStorage.setItem('chats',JSON.stringify(chats));
+	    
+	  }
 }
